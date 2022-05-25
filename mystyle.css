@@ -1,0 +1,608 @@
+body
+{
+    
+    margin: auto;
+    background-image:url("Assets/Images/BackgroundImg.jpg");
+    background-size:120%;
+    background-size:fill;
+    background-repeat:repeat;
+    object-fit: scale-down;
+    
+}
+
+h1
+{
+    text-align: center;
+    color: white;
+    text-emphasis-style: bold;
+    
+    
+
+}
+
+/* Login Page*/
+#Regbutton
+{
+    display: block;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: #00b8e6;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    margin-bottom: 20px;
+    position:fixed;
+    bottom: 70px;
+    right: 0;  
+}
+
+#Logbutton
+{
+    display: block;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: #00b8e6;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    margin-bottom: 20px;
+    position:absolute;
+    bottom:0;
+    right: 0;
+}
+
+#Regbutton:hover,#Logbutton:hover
+{
+    background-color:#ccccff;
+}
+#Regbutton:active,#Logbutton:active
+{
+    background-color: #00b8e6;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+/*Login Verify Page*/
+.loader
+{
+    margin:auto;
+    bottom: 50%;
+    left:auto;
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #3498db;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin 
+{
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+  
+  @keyframes spin 
+{
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+/*Registration Page*/
+#regBox
+{
+    margin: auto;
+    width: 90%;
+    height: 90%;
+    background-color: gray;
+}
+/*make the nav bar scale to phones*/
+
+.navBar
+  {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #0086b3;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+/*Animating the button*/
+#weight, #overallProgress, #home, #runInfo, #settings
+{
+    display: block;
+    float: right;
+    margin-right:00.5%;
+    margin-left: 00.5%;
+    outline: none;
+    border: none;
+    background-color: #00b8e6;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    width: 19%;
+    max-height: 50px;
+    height: auto;
+}
+
+#weight:active, #overallProgress:active, #home:active, #runInfo:active, #settings:active
+{
+  background-color: #00b8e6;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+#weight:hover, #overallProgress:hover, #home:hover, #runInfo:hover, #settings:hover
+{
+  background-color:#ccccff;
+}
+
+/*scaling Images*/
+#weightButton, #progressbutton, #homeButton, #runButton, #settingsButton
+{
+  max-width: 100%;
+    width: auto;
+    max-height: 40px;
+    height: auto;
+    
+}
+
+
+
+/*Home Page*/
+.map {
+    margin: auto;
+    height: 390px;
+    width: 90%;
+  }
+
+/*save button*/
+#saveButton{
+  justify-self: center;
+  margin-top: 5px;
+  display:  block;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+
+}
+
+#saveBtn
+{
+  
+  margin: 0 auto;
+  display: block;
+  outline: none;
+  border: none;
+  background-color: #00b8e6;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+  width: 19%;
+  max-height: 50px;
+  height: auto;
+}
+#saveBtn:hover
+{
+  background-color:#ccccff;
+}
+
+#saveBtn:active
+{
+  background-color: #00b8e6;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+  
+
+/*Stopwatch*/
+  .stopwatch {
+    display: block;
+    justify-items: center;
+    grid-row-gap: 23px;
+    float: right;
+  }
+  
+   .circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100px;
+    width: 100px;
+
+    border: 2px solid;
+    border-radius: 50%;
+    float: right;
+  
+  } 
+  .stats
+{
+  display: block;
+  float: left;
+  text-align: center;
+  background-color: white;
+  max-width: 100px;
+  width: auto;
+  border-radius: 10px;
+  padding: 10px;
+  
+}
+  
+  .time {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 300;
+    font-size: 20px;
+  
+  }
+  /*Container with all the elements in the middle*/
+  #container
+  {
+    display: flex;
+    justify-content: space-between;
+    align-items: grid;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    
+  }
+  .track
+  {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+  }
+  .controls {
+    display: block;
+    width: 80px;
+    height: 95px;    
+  }
+  .playPauseButtons
+  {
+    display: block;
+    width: 80px;
+    height: 80px;
+  }
+  .resetStopButtons
+  {
+    display: block;
+    padding-top: 10px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  button {
+    cursor: pointer;
+    background: transparent;
+    padding: 0;
+    border: none;
+    margin: 0;
+    outline: none;
+  }
+  
+  #playButton {
+    height: 80px;
+    width: 80px;
+  }
+
+  #resetButton{
+    display: block;
+    height: 30px;
+    width: 30px;
+  }
+
+  #stopButton{
+    display: block;
+    height: 30px;
+    width: 30px;
+
+  }
+/*setting page*/
+  .Setting{
+    
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 90%;
+    left: auto;
+    justify-content: center;
+  }
+  
+/*
+Animating the button */
+  #buttonLogout,#buttonPrivacyrights,#buttonAccountdetails,#buttonAccessibility,#buttonTermsandconditions,#buttonHistory,#buttonDayNightmode,#buttonLanguage,#lanEnglish,#cSoon
+{
+    display: block;
+    outline: none;
+    border: none;
+    background-color: #00b8e6;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    width: 40%;
+    
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+
+}
+
+#buttonLogout:active,#buttonPrivacyrights:active,#buttonAccountdetails:active,#buttonAccessibility:active,#buttonTermsandconditions:active,#buttonHistory:active,#buttonDayNightmode:active,#buttonLanguage:active,#lanEnglish:active,#cSoon:active
+{
+  background-color: #00b8e6;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+#buttonLogout:hover,#buttonPrivacyrights:hover,#buttonAccountdetails:hover,#buttonAccessibility:hover,#buttonTermsandconditions:hover,#buttonHistory:hover,#buttonDayNightmode:hover,#buttonLanguage:hover,#lanEnglish:hover,#cSoon:hover
+{
+  background-color:#ccccff;
+}
+.buttonContainer
+{
+  display: flex;
+  justify-content: center;
+  height: 20%;
+
+}
+/*Progress Page*/
+.runInfoBody
+{
+  margin-top: 20px;
+  background-color: white;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  padding-bottom: 15px;
+  border-radius: 10px;
+}
+.runInfoButtons
+{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+}
+#prev,#next
+{
+    display: block;
+    outline: none;
+    border: none;
+    background-color: #00b8e6;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    width: 40%;
+}
+#prev:active,#next:active
+{
+  background-color: #00b8e6;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+#next:hover,#prev:hover
+{
+  background-color:#ccccff;
+}
+#columnchart_material
+{
+  width: 90%;
+  height: 350px;
+  margin: auto;
+}
+#next
+{
+  float: right;
+}
+#prev
+{
+  
+  float: left;
+}
+#historyBtn
+{
+  width: 95%;
+  display: block;
+}
+/* languagepage */
+#languageBox
+{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Termsandconditionpage */
+#tacBox,#privacyBox
+{
+  display: block;
+  border-radius: 25px;
+  background-color: rgb(187, 208, 201);
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+#privacyBox
+{
+  margin-bottom: 80px;
+}
+
+
+/* accountdetails */
+#AccountDetails
+{
+  display: block;
+  width: 90%;
+  text-align: center;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  
+}
+
+#Delete
+{
+  display: block;
+  outline: none;
+  border: none;
+  background-color: #00b8e6;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  width: 180px;
+  height: 40px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#Delete:active
+{
+  background-color: #4CAF50;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+#Delete:hover
+{
+  background-color:#ccccff;
+}
+
+
+/*Exersise Page*/
+.imageGIF{
+  border-radius: 10px;
+  background-color: white;
+  display: block;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  height: auto;
+  padding-top: 20px;
+  margin-bottom: 80px;
+  padding-bottom: 30px;
+}
+#EX1,#EX2,#EX3,#EX4,#EX5,#EX6,#EX7,#EX8,#EX9,#EX10,#EX11,#EX12,#EX13,#EX14,#EX15,#EX16,#EX17,#EX18
+{
+  width: 50%;
+  max-width: 300px;
+  height: auto;
+}
+
+#EX1:active,#EX2:active,#EX3:active,#EX4:active,#EX5:active,#EX6:active,#EX7:active,#EX8:active,#EX9:active,#EX10:active,#EX11:active,#EX12:active,#EX13:active,#EX14:active,#EX15:active,#EX16:active,#EX17:active,#EX18:active
+{
+  filter: blur(4px);
+  -webkit-filter: blur(4px); 
+}
+
+.EX1text,.EX2text,.EX3text,.EX4text, .EX5text,.EX6text,.EX7text,.EX8text,.EX9text,.EX10text,.EX11text,.EX12text,.EX13text,.EX14text,.EX15text,.EX16text,.EX17text,.EX18text
+{
+  text-align: left;
+  padding-left: 10px;
+  display: block;
+  justify-content: space-evenly;
+}
+
+
+
+/* RunInfo */
+#guyPicture
+{
+  max-width: 208px;
+  max-height: 465px;
+  width: auto;
+  height: auto;
+}
+#runInfoTop{
+  
+  margin: auto;
+  align-content: center;
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 90%;
+  max-height: 350px;
+  width: auto;
+
+  
+}
+#historyHeading
+{
+  text-align: center;
+}
+#runInfoBottom
+{
+  border-radius: 10px;
+  margin: auto;
+  width: 90%;
+  margin-top: 10px;
+  background-color: white;
+  padding: 10px; 
+}
+#adviseSpan
+{
+  border: #0086b3;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: lightblue;
+}
+
+
+/* login page style */
+#loginPasswordBoxes{
+  width: 90%;
+  padding-top: 30px;
+  margin: auto;
+
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: 25px;
+  /*border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;*/
+  width: 90%;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 35px;
+  /*border-top-left-radius: 0;
+  border-top-right-radius: 0;*/
+  width: 90%;
+}
+/* progress page */

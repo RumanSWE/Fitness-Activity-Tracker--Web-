@@ -23,23 +23,11 @@
 
 	<title>Registeration Page</title>
 	
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
-<link rel = "stylesheet" type = "text/css" href = "styles.css" />
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
 
-<link rel="stylesheet" href="styles.css" >
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  <link rel="stylesheet" href="mystyle.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/css/ol.css"
-    type="text/css">
+ 
   <meta charset="UTF-8">
   <title>Activity Tracker</title>
-  <!-- Pointer events polyfill for old browsers, see https://caniuse.com/#feat=pointer -->
-  <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>
 
 </head>
 <body>

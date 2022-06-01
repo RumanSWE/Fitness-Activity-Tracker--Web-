@@ -29,49 +29,36 @@ header("Location: home.php");
  
 }else{
 //3.2 When the user visits the page first time, simple login form will be displayed.
-?>
+?> 
 <html>
 <head>
 
     <title>Login Page</title>
 	
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
-<!-- style sheet css link -->
-<link rel = "stylesheet" type = "text/css" href = "styles.css" />
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="mystyle.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/css/ol.css"
-    type="text/css">
+  
   <meta charset="UTF-8">
   <title>Activity Tracker</title>
-  <!-- Pointer events polyfill for old browsers, see https://caniuse.com/#feat=pointer -->
-  <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>
 
 </head>
 
 <body>
 	
 
-<div class="container">
-      <form class="form-signin" method="POST">
+<div class="Logincontainer">
+      <form class="" method="POST">
       <?php if(isset($fmsg)){ ?><div class="alert alert-danger" role="alert"> <?php echo $fmsg; ?> </div><?php } ?>
-        <h2 class="form-signin-heading">Please Login</h2>
+        <h2 class="">Login To Your Account</h2>
 
 
-	  <input type="text" name="username" class="form-control" placeholder="Username" required>
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
-        <a class="btn btn-lg btn-primary btn-block" href="register.php">Register</a>
+	  <input type="text" class="inputLogin" name="Email" class="" placeholder="Username" required>
+        
+        <input type="password" name="password" id="inputPassword" class="" placeholder="Password" required>
+        <button class="" type="submit">Login</button>
+        <a class="" href="register.php">Register</a>
       </form>
 </div>
+<div class="signUpContainer"><h2 class=>New Here?</h2></div>
 
 </body>
 

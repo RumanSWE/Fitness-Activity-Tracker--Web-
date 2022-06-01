@@ -1,39 +1,69 @@
 <!DOCTYPE html>
 <meta charset="UTF-8">
-<html lang="en">
+<html>
+    
     <head>
-        <title>Activity Tracker</title>
+        <title>Flow Track</title>
         <link  href ="mystyle.css" type ="text/css"  rel ="stylesheet">
     </head>
-    <div id="sda">
+    
+    
         <body>
-                
-            <header>
-                <!--Map and title -->
-                <h1>Activity Tracker</h1>
-                
+            
+           <header>
+            <div class="homeLogin"> 
+          <button id ="Logbutton" onclick="window.location.href='login.php'">Login</button>   
+      <button id="Regbutton" onclick="window.location.href='register.php'">Register</button>
+      
+      </div> 
             </header>
+              
+  <section class="one">
+        
+    <h1>Flow Track </h1>
+    <p>Track & Record Your Outdoor Actvities Across Any Device Using Your Browser</p>
+      
+      
+  </section>
             
-            <div class="tab">
-              <button class="tablinks" onclick="">London</button>
-              <button class="tablinks" onclick="">Paris</button>
-              <button class="tablinks" onclick="">Tokyo</button>
-            </div>
+  <section class="two">
+      <h2>About This Project (background) - breif caption of the program</h2>
+      <p>Sign Up </p>
+            </section>
             
-            <footer>
-                <button id="Regbutton" onclick="window.location.href='register.php'">Register</button>
-
-                <button id="Logbutton" onclick="window.location.href='login.php'">Login</button>
-
-            </footer>
+  <section class="three">
+      <h2>Contact</h2>
+      
+      <div class="contactContainer" > 
+          <div class ="contactContent" onclick="location.href='https://www.linkedin.com/in/ruman-sanghera-89a30b1b8/';" style="cursor: pointer;">
+              <img src="\Assets\Images\linkdin.png" alt="linkdin" width="100" height="100">
+              <h3>Linkedin</h3>
+              <p>Connect With Me On Linkdin And Discover More About Me</p>
+          </div>
+          <div class ="contactContent" onclick="location.href='mailto:rumansanghera@gmail.com';" style="cursor: pointer;"> 
+              <img src="\Assets\Images\email.png" alt="Email" width="100" height="100">
+              <h3>Email</h3>
+              <p>Email Enquires And More Rumansanghera@gmail.com</p>
+          </div>
+          <div class ="contactContent" onclick="location.href='https://github.com/RumanSWE';" style="cursor: pointer;">
+          <img src="\Assets\Images\github.png" alt="Github" width="100" height="100">
+              <h3>Github</h3>
+              <p>Check Out My Github Portfolio For More Projects</p>
+              
+          </div>
+          
+      
+      </div>
+            
+  </section>
             
 
-
+ </body>
 
                 
-        </body>
-</div>
+       
 
+</html>
 
 
     

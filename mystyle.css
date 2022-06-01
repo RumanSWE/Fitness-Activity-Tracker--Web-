@@ -10,16 +10,16 @@ h1
     text-align: center;
     font-weight: 600;
     font-size: 100px;
-    color: #EAEAEA;
+    color: white;
 }
 h2
 {
-    color: #A2A2A2;
+    color: #191919;
     font-size: 50px
 }
 p
 {
-    color: #909090;
+    color: white;
     font-weight: 600;
     
 }
@@ -39,8 +39,9 @@ section {
   text-align: center;
   position: relative;
 }
-.one {
-  background-image: linear-gradient(to bottom, #3cbc8c, #FAFAFA);
+.one 
+{
+   background-image: linear-gradient(to bottom, #3cbc8c 80%, #FAFAFA 100%);
 }
 
 .two {
@@ -83,18 +84,36 @@ section {
 	left: 0;
     position: relative;
 	justify-content: center;
+	text-align: center;
 }
 .signUpContainer
 {
     float: right;
     width: 30%;
     height: 100%;
-    background-color: #1E1E1E;
+    background-color: #3cbc8c;
+	text-align: center;
 }
 .inputLogin
 {
 	border-radius: 20px;
-	width: 40%;
+	width: 100%;
+	border: none;
+	padding: 15px;
+	background-color: #f0f4f4;
+	margin: 10px;
+}
+.loginButton
+{
+	width: 50%;
+	border-radius: 20px;
+	padding: 15px;
+	background-color: #3cbc8c;
+	margin: 10px;
+    color: white;
+	font-weight: 500;
+	
+	
 }
 .form-signin {
   max-width: 330px;

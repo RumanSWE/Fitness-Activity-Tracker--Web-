@@ -51,14 +51,20 @@ header("Location: home.php");
         <h2 class="">Login To Your Account</h2>
 
 
-	  <input type="text" class="inputLogin" name="Email" class="" placeholder="Username" required>
+	  <input type="text" class="inputLogin" name="username" class="" placeholder="Email" required>
         
-        <input type="password" name="password" id="inputPassword" class="" placeholder="Password" required>
-        <button class="" type="submit">Login</button>
-        <a class="" href="register.php">Register</a>
+        <input type="password" name="password" id="inputPassword" class="inputLogin" placeholder="Password" required>
+        
+        <button class="loginButton" type="submit">Sign In</button>
+        
       </form>
 </div>
-<div class="signUpContainer"><h2 class=>New Here?</h2></div>
+
+<div class="signUpContainer">
+<h1 class="">New Here?</h1>
+<p>Sign Up For Free Aand Expereince Flow Track</p>
+<a class="loginButton" href="register.php">Sign Up</a>
+</div>
 
 </body>
 

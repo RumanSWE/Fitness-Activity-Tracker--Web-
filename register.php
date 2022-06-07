@@ -32,29 +32,36 @@
 </head>
 <body>
 
-<div class="container">
-      <form class="form-signin" method="POST">
+<div class="Logincontainer">
+      <form class="loginSubContain" method="POST">
       
       <?php if(isset($smsg)){ ?><div class="alert alert-success" role="alert"> <?php echo $smsg; ?> </div><?php } ?>
       <?php if(isset($fmsg)){ ?><div class="alert alert-danger" role="alert"> <?php echo $fmsg; ?> </div><?php } ?>
-        <h2 class="form-signin-heading">Please Register</h2>
-        <div class="input-group">
-	  <input type="text" name="username" class="form-control" placeholder="Username" required>
-	</div>
-        <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <h2 class="">Please Register</h2>
+       
+	  <input type="text" name="username" class="inputLogin" placeholder="Username" required>
+      <input type="email" name="email" id="inputEmail" class="inputLogin" placeholder="Email address" required autofocus>
+      <input type="password" name="password" id="inputPassword" class="inputLogin" placeholder="Password" required>
+      
 		    <div class="checkbox">
           <label>
             <input type="checkbox" value="remember-me" required> 
-			<a onclick="window.location.href='./settingPages/tAndC.html'">Accept  Terms and Condtions</a>
+			<a onclick="window.location.href='./settingPages/tAndC.html'">Accept Terms and Condtions</a>
           </label>
         </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
-        <a class="btn btn-lg btn-primary btn-block" href="login.php">Login</a>
+        <button class="loginButton" type="submit">Register</button>
+        
       </form>
 </div>
+
+<div class="signUpContainer">
+	<form class="loginSubContain">
+		<h1 class="h2_login">Have An Account?</h1>
+		<p>Login To An Existing Account</p>
+		<button onclick="window.location.href='login.php'" class="signupButton" type="button">Login</button>
+	</form>
+</div>
+
 
 </body>
 

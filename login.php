@@ -46,13 +46,12 @@ header("Location: home.php");
 	
 
 <div class="Logincontainer">
-      <form class="" method="POST">
+      <form class="loginSubContain" method="POST">
       <?php if(isset($fmsg)){ ?><div class="alert alert-danger" role="alert"> <?php echo $fmsg; ?> </div><?php } ?>
         <h2 class="">Login To Your Account</h2>
 
 
 	  <input type="text" class="inputLogin" name="username" class="" placeholder="Email" required>
-        
         <input type="password" name="password" id="inputPassword" class="inputLogin" placeholder="Password" required>
         
         <button class="loginButton" type="submit">Sign In</button>
@@ -61,9 +60,12 @@ header("Location: home.php");
 </div>
 
 <div class="signUpContainer">
-<h1 class="">New Here?</h1>
-<p>Sign Up For Free Aand Expereince Flow Track</p>
-<a class="loginButton" href="register.php">Sign Up</a>
+	<form class="loginSubContain">
+	<h1 class="h2_login">New Here?</h1>
+	<p>Sign Up For Free And Expereince Flow Track</p>
+	<button onclick="window.location.href='register.php'" class="signupButton" type="button">Sign Up</button>
+	
+	</form>
 </div>
 
 </body>

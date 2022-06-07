@@ -41,9 +41,6 @@ $loggedInUsername = $_SESSION['username'];
 					$avgSpeed = $distance/$timeFinal;                                                               
 					
 					
-					
-					
-					
 				  $query = "INSERT INTO `userdata` (username, distance, time,speed,calories) VALUES ('$loggedInUsername', '$distance','$time','$avgSpeed','$calories')";
 				  $result = mysqli_query($connection, $query);
 				
@@ -69,29 +66,25 @@ $loggedInUsername = $_SESSION['username'];
   <!-- Pointer events polyfill for old browsers, see https://caniuse.com/#feat=pointer -->
   <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>
 
-  <h1>Activity Tracker</h1>
 </head>
 
 <body>
-  <div id="map" class="map"></div>
-  <div id="info" style="display: none;"></div>	
-  <div id="container">
-
-
-   
-
+ <div class="mapWrapper">
+ 	<div id="map" class="map"></div>
+ </div>
+	
+  <script src="Scripts/geo.js"></script>
+  <script src="Scripts/calories.js"></script>
+  <script src="Scripts/Timer.js"></script>
+  <script src="Scripts/resetHome.js"></script>
+  
+  
+    <div id="container"> 
     <!--Stats -->
     <div class="stats">
-
-      <!--Checkbox lable -->
-        <!-- <input id="track" type="checkbox"  /> -->
-      <p>
         Calories: <span id="calories" class="calories"></span><!--calories-->
-      </p>
-      <p>
         Speed: <span id="speed"></span>kph
-      </p>
-      Distance: <span id="distance">0</span>Km<!--distance-->
+        Distance: <span id="distance">0</span>Km<!--distance-->
     </div>
 
      <!-- stopwatch contols -->
@@ -120,28 +113,21 @@ $loggedInUsername = $_SESSION['username'];
         <span class="time" id="display">00:00:00</span><!--time-->
       </div>
     </div>
-
-
-  </div>
-  
-  <div id = saveButton>
+    
+    <div id = saveButton>
   <form method="POST">
   <input id ="saveBtn" type="submit" value="Save" name="saveBtn">
   </form>
   </div>
-	
 
-	
-  <script src="Scripts/geo.js"></script>
-  <script src="Scripts/calories.js"></script>
-  <script src="Scripts/Timer.js"></script>
-  <script src="Scripts/resetHome.js"></script>
-  
+
+  </div>
+   
 
 
 <div class="navBar">
-  <button id="weight" onclick="window.location.href='exercise.html'"><img id="weightButton" src="Assets\Images\weightButton.svg" alt="weightButton" width="100%" height="100%"></button>
-  <button id="overallProgress" onclick="window.location.href='progress.php'"><img id="progressbutton" src="Assets/Images/graphButton.svg" alt="overallProgress" width="100%" height="100%"></button>
+  <button id="overallProgress" onclick="window.location.href='progress.php'"><img id="progressbutton" src="Assets/Images/graphButton.svg" alt="overallProgress" width="100%" height="100%">
+  </button>
   <button id="home" onclick="window.location.href='home.php'"><img id="homeButton" src="Assets\Images\homeButton.svg" alt="Home" width="100%" height="100%"></button>
   <button id="runInfo" onclick="window.location.href='runInfo.php'"><img id="runButton" src="Assets/Images/runInfoButton.svg" alt="Run Info"  width="100%" height="100%"></button>
   <button id="settings" onclick="window.location.href='settings.html'"><img id="settingsButton" src="Assets/Images/settingsButton.svg" alt="Settings"  width="100%" height="100%"></button>

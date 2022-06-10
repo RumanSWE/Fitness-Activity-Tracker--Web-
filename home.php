@@ -17,8 +17,8 @@ $loggedInUsername = $_SESSION['username'];
 				
 				if(!isset($_COOKIE[$timeCookie]) && !isset($_COOKIE[$distanceCookie]) && !isset($_COOKIE[$caloriesCookie])) 
 				{
-          echo "<script type='text/javascript'>alert('Please press reset or start an activity');</script>";
-					// echo "Please press reset or start an activity";
+				
+          			echo "<script type='text/javascript'>alert('Please press reset or start an activity');</script>";
 				} 
 				else
 				{
@@ -65,6 +65,8 @@ $loggedInUsername = $_SESSION['username'];
   <title>Activity Tracker</title>
   <!-- Pointer events polyfill for old browsers, see https://caniuse.com/#feat=pointer -->
   <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>
+  	
+
 
 </head>
 
@@ -72,65 +74,48 @@ $loggedInUsername = $_SESSION['username'];
  <div class="mapWrapper">
  	<div id="map" class="map"></div>
  </div>
-	
   <script src="Scripts/geo.js"></script>
   <script src="Scripts/calories.js"></script>
   <script src="Scripts/Timer.js"></script>
   <script src="Scripts/resetHome.js"></script>
-  
-  
-    <div id="container"> 
-    <!--Stats -->
-    <div class="stats">
-        Calories: <span id="calories" class="calories"></span><!--calories-->
-        Speed: <span id="speed"></span>kph
-        Distance: <span id="distance">0</span>Km<!--distance-->
-    </div>
-
-     <!-- stopwatch contols -->
+	
+<div class="grid-container">
+  <div class="item1"><span class="statText">Time</span> <span class="time" id="display">00:00:00</span></div>
+  <div class="item2"><span class="statText">Speed (KPH)</span> <span id="speed">0</span></div>
+  <div class="item3"><span class="statText">Distance (KM)</span> <span id="distance">0</span></div>  
+  <div class="item4"><span class="statText">Calories</span> <span id="calories" class="calories">0</span></div>
+</div>
      <div class="controls">
-
       <div class="playPauseButtons">
         <button id="buttonPlay">
           <img id="playButton" src="Assets/Images/playImg.svg" onclick="activeDist=true"/>
         </button>
       </div>
-      
-      <div class="resetStopButtons">
-        <button id="buttonStop">
+      <div class="stopButtonDiv"> 
+         <button id="buttonStop">
           <img id="stopButton" src="Assets/Images/stopImg.svg" />
         </button>
-        <button id="buttonReset" onclick="reset()">
+      </div>
+      <div class="ResetButtonDiv">
+       	<button id="buttonReset" onclick="reset()">
           <img id="resetButton" src="Assets/Images/resetImg.svg" /> <!--Reset button-->
         </button>
-      </div>
-    </div>
-
-
-    <!-- stopwatch body -->
-    <div class="stopwatch">
-      <div class="circle">
-        <span class="time" id="display">00:00:00</span><!--time-->
-      </div>
-    </div>
+       </div>
+       <div id = saveButton>
+	  <form method="POST">
+	  	<input id ="saveBtn" type="submit" value="Save" name="saveBtn">
+	  </form>
+  		</div>
+       
+	</div>
     
-    <div id = saveButton>
-  <form method="POST">
-  <input id ="saveBtn" type="submit" value="Save" name="saveBtn">
-  </form>
-  </div>
-
-
-  </div>
-   
-
 
 <div class="navBar">
   <button id="overallProgress" onclick="window.location.href='progress.php'"><img id="progressbutton" src="Assets/Images/graphButton.svg" alt="overallProgress" width="100%" height="100%">
   </button>
   <button id="home" onclick="window.location.href='home.php'"><img id="homeButton" src="Assets\Images\homeButton.svg" alt="Home" width="100%" height="100%"></button>
-  <button id="runInfo" onclick="window.location.href='runInfo.php'"><img id="runButton" src="Assets/Images/runInfoButton.svg" alt="Run Info"  width="100%" height="100%"></button>
   <button id="settings" onclick="window.location.href='settings.html'"><img id="settingsButton" src="Assets/Images/settingsButton.svg" alt="Settings"  width="100%" height="100%"></button>
 </div>
+
 </body>
 </html>

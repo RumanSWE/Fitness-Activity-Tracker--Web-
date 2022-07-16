@@ -7,11 +7,11 @@ html, body {
 
 h1
 {
-  
     text-align: center;
     font-weight: 600;
     font-size: 110px;
     color: white;
+	margin: 0px;
 }
 h2
 {
@@ -68,12 +68,28 @@ section {
 }
 .one 
 {
-   /* background-image: linear-gradient(to bottom, #3cbc8c 80%, #FAFAFA 100%);*/
-  
-  
+	text-align: center;
+	
 background-color: #3cbc8c;
-
 }
+/*
+.imgMain{
+
+	width: 40%;
+	height: auto;
+	
+}
+*/
+@media only screen and (max-width: 480px) {
+  .imgMain {
+    width: 40%;
+	
+	
+	  
+
+  }
+}
+
 
 .two {
   

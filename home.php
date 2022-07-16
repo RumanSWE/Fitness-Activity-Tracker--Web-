@@ -5,7 +5,7 @@ if(!(isset($_SESSION['username'])))
 {
     header("Location: login.php");
 }
-require('connect.php');
+//require('connect.php');
 
 $loggedInUsername = $_SESSION['username'];
 

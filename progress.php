@@ -22,7 +22,7 @@ $loggedInUsername = $_SESSION['username'];
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <title>Progress</title>
         <link rel="stylesheet" href="mystyle.css">
-<?php
+<?php	
 
 # Grab the data2 from the database
 $query = "SELECT * FROM `userdata` WHERE username ='$loggedInUsername' ORDER BY timestamp DESC";
@@ -39,7 +39,7 @@ if ($result->num_rows > 0) {
 			<th>Speed</th>
 			<th>Time</th>
 			<th>Calories</th>
-			
+			<th> </th>
 			</tr>";
     while($row = $result->fetch_assoc()) {
 		
@@ -49,11 +49,36 @@ if ($result->num_rows > 0) {
 		echo "<td>" . $row["speed"] . "</td>";
 		echo "<td>" . $row["time"] . "</td>";
 		echo "<td>" . $row["calories"] . "</td>";
+		echo "<td><a href='deleteRow.php?id=".$row['ID']."'>Delete</a></td>";
 		echo "</tr>";
+
 	}
 	echo "</table>"; 
 } else {
-    echo "0 results";
+    	echo " <h2 id='historyHeading'>History</h2>";
+	echo "<table id='History'>
+			<tr>
+			<th>Timestamp</th>
+			<th>Distance</th>
+			<th>Speed</th>
+			<th>Time</th>
+			<th>Calories</th>
+			
+			</tr>";
+	
+		echo "<tr>";
+	
+		echo "<td>". "</td>";
+	echo "<td>". "</td>";
+	echo "<td>". "</td>";
+	echo "<td>". "</td>";
+	echo "<td>". "</td>";
+		
+		echo "</tr>";
+	
+	
+	
+	echo "</table>"; 
 }
 
 

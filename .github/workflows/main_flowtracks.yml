@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'FlowTracks'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A53114478B1D440C8B337FC2E49B38D1 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9C5DFC231F0641F3BF060141AFD5FE42 }}
           package: .

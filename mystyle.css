@@ -22,9 +22,14 @@ h2
 p
 {
     color: white;
-    font-weight: 600;
+    font-weight: 550;
+	font-size: 20px;
+}
+.para
+{
+	color: black;
+	font-weight: 550;
 	font-size: 30px;
-    
 }
 /* Index/Home page */
 html{
@@ -318,7 +323,6 @@ background-color: #3cbc8c;
     bottom: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: white;
     overflow: hidden;
     border-radius: 10px;
 	margin-left: 20%
@@ -650,7 +654,7 @@ Animating the button */
 {
   display: block;
   border-radius: 25px;
-  background-color: rgb(187, 208, 201);
+  background-color: #3cbc8c;
   width: 90%;
   margin-left: auto;
   margin-right: auto;

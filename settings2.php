@@ -199,7 +199,10 @@ if(!(isset($_SESSION['username'])))
     </form>
     <form class="form-signin" method="POST">
         <input class="btn btn-lg btn-primary btn-block" type="submit" value="Delete Account" name="delAccount" >
+		
+
     </form>
+	<button class="btn btn-lg btn-primary btn-block" onclick="history.back()">Go Back</button>
 
 
 
